@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      var first=window.prompt("enter first number");
+      var second=window.prompt("enter the second number");
+      var third=window.prompt("enter the third number");
+      var temp;
+      if(first>second&&first>third)
+      {
+        if(second>third)
+        alert(first + ',' + second + ',' + third);
+        else
+        alert(first + ',' + third + ',' + second);
+      }
+      if(second>first&&second>third)
+      {
+        if(first>third)
+        alert(second + ',' + first + ',' + third);
+        else
+        alert(second + ',' + third + ',' + first);
+      }
+      if(third>first&&third>second)
+      {
+        if(first>second)
+        alert(third + ',' + first + ',' + second);
+        else
+        alert(third + ',' + second + ',' + first);
+      }
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      var n,i,j;
+      var text="";
+      var flag=1;
+      n=window.prompt("enter any number");
+      document.write('"0 is even"');
+      document.write("<br>");
+      document.write('"1 is odd"');
+      document.write("<br>");
+      for(i=2;i<=n;i++)
+      {
+        text="";
+        flag=1;
+        if(i%2==0)
+        text='"' + i + ' is even';
+        else
+        text='"' + i + ' is odd';
+        for (j = 2; j <= i / 2; j++)
+        {
+        if (i % j == 0)
+        {
+            flag=0;
+            break;
+        }
+      }
+        if(flag==1)
+          text=text + ' and prime';
+
+        text = text + '"';
+        document.write(text);
+        document.write("<br>")
+    }
+    </script>
+  </body>
+</html>

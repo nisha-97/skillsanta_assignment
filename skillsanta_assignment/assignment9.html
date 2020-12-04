@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <p id="demo"></p>
+
+    <script type="text/javascript">
+      var n="";
+      n=window.prompt("enter the temperature");
+      function celsius(num)
+      {
+        return ((num-32)*5)/9 + "\u00B0" + "C";
+      }
+      function farenheit(num)
+      {
+        return (num*9/5)+32 + "\u00B0" + "F";
+      }
+      var search,len,value;
+      len=n.length;
+      value=parseFloat(n);
+      if(n[len-1]=="C"||n[len-1]=='c')
+      document.getElementById("demo").innerHTML=farenheit(value);
+      else
+      document.getElementById("demo").innerHTML=celsius(value);
+
+
+
+    </script>
+  </body>
+</html>

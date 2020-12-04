@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      function capitalize_Words(text)
+      {
+        var len,splitter,arr=[],i;
+        splitter=text.split(" ");
+        len=splitter.length;
+        for(i=0;i<len;i++)
+        {
+          arr.push(splitter[i].charAt(0).toUpperCase() + splitter[i].slice(1));
+        }
+        return arr.join(" ");
+
+      }
+      console.log(capitalize_Words("hi from skillsanta"));
+    </script>
+  </body>
+</html>

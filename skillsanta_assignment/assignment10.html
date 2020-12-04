@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      var text="";
+      text=window.prompt("enter any text");
+      function strcon() {
+            var b = '';
+            var i;
+            for (i = 0; i < text.length; i++) {
+                if (text.charCodeAt(i) >= 65 && text.charCodeAt(i) <= 90) {
+                    b = b + text.charAt(i).toLowerCase();
+                }
+                else
+                    b = b + text.charAt(i).toUpperCase();
+            }
+            document.write(b);
+        }
+      strcon();
+
+
+
+    </script>
+  </body>
+</html>
